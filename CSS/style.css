@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+/*header*/
+header{
+    background-color: darkorange;
+}
+
+header > .container{
+    height: 70px;
+    border: 2px dashed black;
+}
+.debug-header{
+    border: 2px dashed black;
+    height: 20px;
+    width: 100px;
+}
