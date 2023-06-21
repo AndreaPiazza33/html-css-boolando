@@ -95,3 +95,32 @@ header > .container{
     border: 2px dashed black;
     background-color: white;
 }
+
+/*footer*/
+footer{
+    background-color: black;
+    margin-top: 20px;
+}
+footer div{
+    position: relative;
+    height: 100px;
+    width: 200px;
+    border: 2px dashed white;
+}
+.debug-footer-text{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100px;
+    border: 2px dashed white;
+    color: white;
+}
+.debug-footer-social{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 100px;
+    border: 2px dashed white;
+    color: white;
+}
