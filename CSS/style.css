@@ -11,7 +11,7 @@ img{
 
 /*utils*/
 .container{
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto
 }
 .flex{
@@ -133,22 +133,32 @@ footer div{
     position: relative;
     height: 100px;
     width: 200px;
-    border: 2px dashed white;
-}
-.debug-footer-text{
-    position: absolute;
-    bottom: 0;
-    height: 50px;
-    width: 100px;
-    border: 2px dashed white;
     color: white;
 }
-.debug-footer-social{
+footer h3{
+  position: absolute;
+  top: 30px;
+}
+
+.list-footer{
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  list-style-type: none;
+}
+.list-footer li{
+  display: inline;
+  align-items: center;
+}
+.footer-social{
     position: absolute;
-    bottom: 0;
     right: 0;
-    height: 50px;
-    width: 100px;
-    border: 2px dashed white;
+    top: 30px;
     color: white;
+}
+.social-footer{
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  color: white;
 }
