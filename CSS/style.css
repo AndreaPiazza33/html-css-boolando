@@ -4,9 +4,14 @@
     padding: 0;
 }
 
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
 
+/*utils*/
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto
 }
 .flex{
@@ -25,17 +30,16 @@
     flex-wrap: wrap;
 }
 
-
 /*header*/
 header{
     background-color: darkorange;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
-header img{
-    max-height: 100%;
-    max-width: 100%;
-}
-
 header > .container{
     height: 70px;
 }
@@ -45,67 +49,85 @@ header > .container{
     margin-right: 90px;
 }
 
-
 /*main*/
-
-.debug-card{
+.card{
     position: relative;
-    border: 2px dashed black;
-    height: 500px;
+    height: 563px;
     width: calc(100% / 3 - 10px);
-    margin-top: 20px;
+    margin-top: 100px;
     background-color: lightslategray;
 }
-.debug-card-text{
+.card img{
     position: absolute;
-    bottom: 0;
+    right: 0;
+    top: 0;
     left: 0;
-    height: 30px;
-    width: 70px;
-    border: 2px dashed black;
+    bottom: 0;
+}
+.pic-a{
+  display: block;
+}
+.pic-b{
+  display: none;
+}
+.card:hover .pic-a{
+  display: none;
+}
+.card:hover .pic-b{
+  display: block;
+}
+.card-text{
+    position: relative;
+    top: 97%;
+    left: 0;
     background-color: white;
 }
-.debug-label{
+.price{
+    color: red;
+}
+.old-price{
+    text-decoration: line-through;
+}
+.label{
     position: absolute;
-    bottom: 35px;
+    bottom: 50px;
     left: 0;
-    height: 25px;
-    width: 50px;
-    border: 2px dashed black;
     background-color: red;
+    color: white;
 }
-.debug-secondary-label{
+.secondary-label{
     position: absolute;
-    bottom: 35px;
-    left: 55px;
-    height: 25px;
-    width: 50px;
-    border: 2px dashed black;
+    bottom: 50px;
+    left: 40px;
     background-color: green;
+    color: white;
 }
-.debug-secondary-special-label{
+.secondary-special-label{
     position: absolute;
-    bottom: 35px;
+    bottom: 50px;
     left: 0;
-    height: 25px;
-    width: 50px;
-    border: 2px dashed black;
-    background-color:green
+    background-color:green;
+    color: white;
 }
-.debug-heart{
+.heart{
     position: absolute;
     top: 10px;
     right: 0;
-    height: 40px;
-    width: 40px;
-    border: 2px dashed black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
     background-color: white;
+}
+.heart:hover{
+  color: red;
 }
 
 /*footer*/
 footer{
     background-color: black;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 footer div{
     position: relative;
